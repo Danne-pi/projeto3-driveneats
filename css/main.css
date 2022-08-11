@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.border-green {
+    border: 5px solid green;
+}
+button{
+    border: 5px solid white;
+    border-radius: 9px;
+}
