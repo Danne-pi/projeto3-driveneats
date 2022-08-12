@@ -1,21 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap');
 
-*{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
 body{
     background-color: #E5E5E5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
 }
 .border-green {
-    border: 5px solid green;
+    border: 3px solid #32B72F;
 }
 button{
-    border: 5px solid white;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    border: 3px solid transparent;
     border-radius: 9px;
+    margin-inline: 8px;
+    position: relative;
+}
+button ion-icon{
+    width: 25px;
+    height: 25px;
+    color: #32B72F;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: none;
+}
+.show{
+    display: unset;
+}
+.foods, .drinks{
+    margin-bottom: 20px;
+}
+.comida ion-icon{
+    right: 15px;
+    transform: translate(0px, 2px) rotate(45deg);
+}
+.menu{
+    display: grid;
+    justify-content: center;
+}
+.foods, .drinks, .desserts{
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.foods::-webkit-scrollbar, .drinks::-webkit-scrollbar, .desserts::-webkit-scrollbar {
+    display: none;
 }

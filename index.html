@@ -6,21 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <button id="btn1" onclick="btnClick('btn1')">
-        <food-card food="comida 1"></food-card>
-    </button>
-    <button id="btn2" onclick="btnClick('btn2')">
-        <food-card food="comida 1"></food-card>
-    </button>
-    <button id="btn3" onclick="btnClick('btn3')">
-        <food-card food="comida 1"></food-card>
-    </button>
+    <div class="menu">
+        <div class="foods">
+            <button class="comida" id="cb1" onclick="menuComidas(1, 'cb1', 'ci1')">
+                <food-card food="comida 1"></food-card>
+                <ion-icon id="ci1" name="pizza"></ion-icon>
+            </button>
+            <button class="comida" id="cb2" onclick="menuComidas(1, 'cb2', 'ci2')">
+                <food-card food="comida 2"></food-card>
+                <ion-icon id="ci2" name="pizza"></ion-icon>
+            </button>
+            <button class="comida" id="cb3" onclick="menuComidas(1, 'cb3', 'ci3')">
+                <food-card food="comida 3"></food-card>
+                <ion-icon id="ci3" name="pizza"></ion-icon>
+            </button>
+            <button class="comida" id="cb4" onclick="menuComidas(1, 'cb4', 'ci4')">
+                <food-card food="comida 4"></food-card>
+                <ion-icon id="ci4" name="pizza"></ion-icon>
+            </button>
+            <button class="comida" id="cb5" onclick="menuComidas(1, 'cb5', 'ci5')">
+                <food-card food="comida 5"></food-card>
+                <ion-icon id="ci5" name="pizza"></ion-icon>
+            </button>
+        </div>
+        <div class="drinks">
+            <button class="bebida" id="bb1" onclick="menuComidas(2 ,'bb1', 'bi1')">
+                <food-card food="bebida 1"></food-card>
+                <ion-icon id="bi1" name="beer"></ion-icon>
+            </button>
+            <button class="bebida" id="bb2" onclick="menuComidas(2, 'bb2', 'bi2')">
+                <food-card food="bebida 2"></food-card>
+                <ion-icon id="bi2" name="beer"></ion-icon>
+            </button>
+            <button class="bebida" id="bb3" onclick="menuComidas(2 ,'bb3', 'bi3')">
+                <food-card food="bebida 3"></food-card>
+                <ion-icon id="bi3" name="beer"></ion-icon>
+            </button>
+            <button class="bebida" id="bb4" onclick="menuComidas(2, 'bb4', 'bi4')">
+                <food-card food="bebida 4"></food-card>
+                <ion-icon id="bi4" name="beer"></ion-icon>
+            </button>
+            <button class="bebida" id="bb5" onclick="menuComidas(2 ,'bb5', 'bi5')">
+                <food-card food="bebida 5"></food-card>
+                <ion-icon id="bi5" name="beer"></ion-icon>
+            </button>
+        </div>
+        <div class="desserts">
+            <button class="sobremesa" id="sb1" onclick="menuComidas(3 ,'sb1', 'si1')">
+                <food-card food="sobremesa 1"></food-card>
+                <ion-icon id="si1" name="ice-cream"></ion-icon>
+            </button>
+            <button class="sobremesa" id="sb2" onclick="menuComidas(3, 'sb2', 'si2')">
+                <food-card food="sobremesa 2"></food-card>
+                <ion-icon id="si2" name="ice-cream"></ion-icon>
+            </button>
+            <button class="sobremesa" id="sb3" onclick="menuComidas(3 ,'sb3', 'si3')">
+                <food-card food="sobremesa 3"></food-card>
+                <ion-icon id="si3" name="ice-cream"></ion-icon>
+            </button>
+            <button class="sobremesa" id="sb4" onclick="menuComidas(3, 'sb4', 'si4')">
+                <food-card food="sobremesa 4"></food-card>
+                <ion-icon id="si4" name="ice-cream"></ion-icon>
+            </button>
+            <button class="sobremesa" id="sb5" onclick="menuComidas(3 ,'sb5', 'si5')">
+                <food-card food="sobremesa 5"></food-card>
+                <ion-icon id="si5" name="ice-cream"></ion-icon>
+            </button>
+        </div>
+    </div>   
     <script type="module" src="main.js"></script>
     <script src="buttons.js"></script>
 </body>

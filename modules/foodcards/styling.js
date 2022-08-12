@@ -6,18 +6,20 @@ div, span, h3 {
 	border: 0;
 }
 #box-card{
-    width: 167px;
-    height: 211px;
+    width: 160px;
+    height: 200px;
     padding: 11px;
-    border-radius: 4px;
-    background-color: #FFFFFF;
+    border-radius: 7px;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     display: grid;
     justify-content: space-between;
 }
 #box-card img{
+    object-fit: cover;
+    height: 110px;
     width: inherit;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .title{
     font-weight: 700;
@@ -28,7 +30,7 @@ div, span, h3 {
 .sub{
     text-align: start;
     color: #A6A6A6;
-    font-size: 15px;
+    font-size: 13px;
 }
 .price{
     transform: translateY(4px);
@@ -40,12 +42,6 @@ div, span, h3 {
     font-weight: 400;
     font-size: 16px;
     color: black;
-}
-.ioncon{
-    height: 16px;
-    width: 16px;
-    color: green;
-    display: none;
 }
 </style>
 `;
