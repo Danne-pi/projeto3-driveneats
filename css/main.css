@@ -6,6 +6,11 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .border-green {
     border: 3px solid #32B72F;
@@ -30,9 +35,6 @@ button ion-icon{
 }
 .show{
     display: unset;
-}
-.foods, .drinks{
-    margin-bottom: 20px;
 }
 .comida ion-icon{
     right: 15px;
