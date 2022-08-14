@@ -1,28 +1,22 @@
 import { FoodSetter } from "./foodset.js";
-import { foodcardstyling } from "./styling.js";
 
-//reaproveitando meu codigo do projeto da globo
-export class FoodCard extends HTMLElement{
-    constructor(){
-        super();
-        this.shadow = this.attachShadow({mode: "open"})
+export function foodCardList(comida, tamanholista){
+    let foodlist;
+    switch (comida) {
+        case "comida":
+            foodlist = document.getElementById("food-list1");
+        break;
+        case "bebida":
+            foodlist = document.getElementById("food-list2");
+        break;
+        case "sobremesa":
+            foodlist = document.getElementById("food-list3");
+        break;
     }
-        
-    static get observedAttributes(){
-        return ['food'];
-    }
-    get food(){
-        return this.getAttribute("food");
-    }
-    set food(val){
-        this.setAttribute("food", val)
-    }
-
-    connectedCallback(){
-        this.render();
-    }
-    
-    render(){
-    this.shadow.innerHTML = foodcardstyling+FoodSetter((this.food).split(" "));
+    for (let i = 0; i < tamanholista; i++) {
+        const create = document.createElement("div");
+        create.classList.add(comida+"-item"+i);
+        foodlist.appendChild(create);
+        document.querySelector("."+comida+"-item"+i).innerHTML = FoodSetter(comida, i);
     }
 }

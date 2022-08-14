@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url(foodcard.css);
+@import url(lists.css);
 
 body{
     background-color: #E5E5E5;
@@ -44,12 +46,4 @@ button ion-icon{
     display: grid;
     justify-content: center;
 }
-.foods, .drinks, .desserts{
-    display: flex;
-    overflow-x: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-.foods::-webkit-scrollbar, .drinks::-webkit-scrollbar, .desserts::-webkit-scrollbar {
-    display: none;
-}
+

@@ -1,8 +1,8 @@
-import { foodlist } from "./content.js";
+import { foodlistcontent } from "./content.js";
 
-export function FoodSetter(idfood){
+export function FoodSetter(comida, num){
         
-    const typeSelected = 'foodlist.'+idfood[0]+'['+(Number.parseInt(idfood[1])-1)+'].'
+    const typeSelected = 'foodlistcontent.'+comida+'['+num+'].'
 
     return /*html*/`
 <div id="box-card">

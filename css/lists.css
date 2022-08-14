@@ -1,0 +1,9 @@
+#food-list1, #food-list2, #food-list3{
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#food-list1::-webkit-scrollbar, #food-list2::-webkit-scrollbar, #food-list3::-webkit-scrollbar {
+    display: none;
+}

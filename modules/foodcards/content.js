@@ -1,4 +1,4 @@
-export const foodlist = {
+export const foodlistcontent = {
     'comida' : [
         {
             'img' : 'https://img.imageboss.me/experience/cdn/animation:true/wp-content/uploads/2021/07/20210726152252-blog_ratatouille_header.png',
