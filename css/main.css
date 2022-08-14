@@ -14,34 +14,6 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
-.border-green {
-    border: 3px solid #32B72F;
-}
-button{
-    cursor: pointer;
-    color: transparent;
-    background-color: transparent;
-    border: 3px solid transparent;
-    border-radius: 9px;
-    margin-inline: 8px;
-    position: relative;
-}
-button ion-icon{
-    width: 25px;
-    height: 25px;
-    color: #32B72F;
-    position: absolute;
-    right: 12px;
-    bottom: 12px;
-    display: none;
-}
-.show{
-    display: unset;
-}
-.comida ion-icon{
-    right: 15px;
-    transform: translate(0px, 2px) rotate(45deg);
-}
 .menu{
     display: grid;
     justify-content: center;
