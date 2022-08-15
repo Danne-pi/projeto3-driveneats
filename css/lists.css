@@ -12,7 +12,10 @@
     padding-left: 16px;
 }
 #food-list1, #food-list2, #food-list3{
+    transform: translateY(-28px);
+    height: 118%;
     display: flex;
+    align-items: center;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */

@@ -3,6 +3,7 @@ import { foodCardList } from "../foodcards/foodcards.js";
 export function basicLoad(){
 
     document.querySelector(".main-menu").style.display = "flex";
+    document.querySelector(".bottom-nav").style.display = "flex";
 
     const menuList = document.createElement("div");
     menuList.className = "menu-list";

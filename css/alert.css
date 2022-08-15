@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     background-color: #fff;
-    height: 325px;
+    height: auto;
     width: 92%;
     border-radius: 9px;
     padding: 12px;
@@ -17,7 +17,6 @@
     transform: translate(-50%, -50%);
 }
 .box-container ion-icon{
-    margin-bottom: 12px;
     height: 100px;
     width: 100px;
     color: #32B72F;
@@ -25,26 +24,42 @@
     transform: translateX(-50%);
 }
 .box-container h1{
-    color: #303030;
+    color: #32B72F;
     font-weight: 500;
     font-size: 24px;
     line-height: 4px;
     text-align: center;
+    margin-top: 16px;
+}
+.box-container .content{
+    margin-block: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
 .box-container span{
-    color: #303030;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
+    margin-block: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #292929;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: auto;
+}
+.box-container strong{
+    font-weight: 700;
+    font-size: 20px;
 }
 .box-container .btns{
-    margin-top: 0px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: space-evenly;
 }
 .box-container .cancel{
     border-radius: 5px;
-    width: auto;
+    width: 120px;
     height: 40px;
     background-color: gray;
     color: white;
@@ -55,7 +70,7 @@
 }
 .box-container .confirm{
     border-radius: 5px;
-    width: auto;
+    width: 120px;
     height: 40px;
     background-color: #32B72F;
     color: white;

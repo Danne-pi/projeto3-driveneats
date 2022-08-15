@@ -1,11 +1,11 @@
-import { basicLoad } from "../pages/basic.js";
+import { orderContent } from "../buttons/orderbutton.js";
 
 export function firstAlert(){
     const create = document.createElement("div");
     create.classList.add("my-alert");
     document.body.appendChild(create);
     const message = document.querySelector(".my-alert");
-    message.innerHTML = myAlertHtml;
+    message.innerHTML = orderContent;
 
     const confirm = document.querySelector('.confirm')
     const cancel = document.querySelector('.cancel')
@@ -28,7 +28,6 @@ export function firstAlert(){
     }
     
     function onCancel () {
-        basicLoad();
         message.remove()
     }
     
@@ -36,38 +35,3 @@ export function firstAlert(){
       .then(() => {
       })
 }
-
-const myAlertHtml = `
-<div class="box-container">
-<ion-icon name="hand-left-outline"></ion-icon>
-<h1>Espera um pouquinho!</h1>
-<span>Eai! Danne aqui! você vai querer<br>o básico ou o empenhado?</span>
-<div class="btns">
-    <button class="cancel">BÁSICO</button>
-    <button class="confirm">EMPENHADO</button>
-</div>
-</div>
-`
-const myPostConfirmAlertHtml = `
-<div class="box-container">
-<ion-icon name="hand-left-outline"></ion-icon>
-<h1>Espera um pouquinho!</h1>
-<span>Eai! Danne aqui! você vai querer<br>o básico ou o empenhado?</span>
-<div class="btns">
-    <button class="cancel">BÁSICO</button>
-    <button class="confirm">EMPENHADO</button>
-</div>
-</div>
-`
-const myPostCancelAlertHtml = `
-<div class="box-container">
-<ion-icon name="hand-left-outline"></ion-icon>
-<h1>Espera um pouquinho!</h1>
-<span>Eai! Danne aqui! você vai querer<br>o básico ou o empenhado?</span>
-<div class="btns">
-    <button class="cancel">BÁSICO</button>
-    <button class="confirm">EMPENHADO</button>
-</div>
-</div>
-`
-

@@ -5,7 +5,7 @@
 
 body{
     margin-top: 92px;
-    margin-bottom: 108px;
+    margin-bottom: 150px;
     position: relative;
     background-color: #E5E5E5;
     display: flex;
@@ -49,18 +49,36 @@ body{
     bottom: 0px;
     background-color: white;
     z-index: 10;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 .ok-button{
+    display: none;
     width: 80%;
+    border-radius: 50px;
     height: 62px;
     background-color: #32B72F;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
 }
 .waiting-button{
     width: 80%;
     border-radius: 50px;
     height: 62px;
     background-color: #CBCBCB;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
 }
