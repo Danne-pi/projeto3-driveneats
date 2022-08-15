@@ -1,4 +1,4 @@
-import { orderContent } from "../buttons/orderbutton.js";
+import { orderContent, zapmessage } from "../buttons/orderbutton.js";
 
 export function firstAlert(){
     const create = document.createElement("div");
@@ -23,7 +23,9 @@ export function firstAlert(){
     }
 
     function onConfirm () {
-        console.log('a')
+        const nome = prompt("Digite seu nome")
+        const ender = prompt("Digite o Endereço")
+        window.open("https://wa.me/5577991557843?text="+encodeURIComponent(zapmessage)+encodeURIComponent("Nome: "+nome+"\nEndereço: "+ender))
         message.remove()
     }
     

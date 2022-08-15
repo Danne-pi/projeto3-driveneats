@@ -7,6 +7,7 @@ okbtn.addEventListener("click", setOrder);
 document.getElementsByClassName("comida border-green")
 
 export let orderContent
+export let zapmessage
 
 export function setOrder(){
     let foodSelect = document.getElementsByClassName("comida border-green")
@@ -43,16 +44,10 @@ export function setOrder(){
     </div>
     </div>
     `
+    zapmessage ="Olá, gostaria de fazer o pedido:\n- Prato: "+foodlistcontent.comida[foodSelect].title +"\n- Bebida: "+foodlistcontent.bebida[drinkSelect].title+"\n- Sobremesa: "+foodlistcontent.sobremesa[dessertSelect].title+"\nTotal: R$ "+(foodlistcontent.comida[foodSelect].price+foodlistcontent.bebida[drinkSelect].price+foodlistcontent.sobremesa[dessertSelect].price).toFixed(2) + "\n\n"
+    
+    
 
     console.log(orderContent)
     firstAlert();
 }
-// let zapmessage =`
-//     Olá, gostaria de fazer o pedido:
-//     - Prato: ${foodlistcontent.comida[foodSelect].title}
-//     - Bebida: ${foodlistcontent.bebida[drinkSelect].title}
-//     - Sobremesa: ${foodlistcontent.sobremesa[dessertSelect].title}
-//     Total: R$ ${(foodlistcontent.comida[foodSelect].price+
-//                 foodlistcontent.bebida[drinkSelect].price+
-//                 foodlistcontent.sobremesa[dessertSelect].price).toFixed(2)}
-//     `
