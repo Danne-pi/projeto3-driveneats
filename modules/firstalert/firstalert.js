@@ -24,6 +24,7 @@ export function firstAlert(){
 
     function onConfirm () {
         console.log('a')
+        message.remove()
     }
     
     function onCancel () {

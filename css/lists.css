@@ -1,3 +1,16 @@
+.menu-list{
+    display: grid;
+    justify-content: center;
+}
+.list-title{
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.018em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+}
 #food-list1, #food-list2, #food-list3{
     display: flex;
     overflow-x: scroll;
@@ -7,3 +20,4 @@
 #food-list1::-webkit-scrollbar, #food-list2::-webkit-scrollbar, #food-list3::-webkit-scrollbar {
     display: none;
 }
+
