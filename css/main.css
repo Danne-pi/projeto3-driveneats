@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url(foodcard.css);
 @import url(lists.css);
+@import url(alert.css);
 
 body{
+    position: relative;
     background-color: #E5E5E5;
     display: flex;
     justify-content: center;

@@ -15,3 +15,4 @@ function menuComidas(foodType, cardId, iconId) {
     document.getElementById(iconId).classList.toggle("show");
     document.getElementById(cardId).classList.toggle("border-green");
 }
+

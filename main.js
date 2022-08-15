@@ -1,7 +1,3 @@
-import { foodCardList } from "./modules/foodcards/foodcards.js";
+import { firstAlert } from "./modules/firstalert/firstalert.js";
 
-// customElements.define('food-card', FoodCard);
-foodCardList("comida", 5);
-foodCardList("bebida", 5);
-foodCardList("sobremesa", 5);
-
+firstAlert();
